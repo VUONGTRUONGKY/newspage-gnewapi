@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" media="screen and (min-device-width: 992px)" href="css/project_04.css">
+	<link rel="stylesheet" media="screen and (min-device-width: 768px)" href="css/tablet.css">
+	<link rel="stylesheet" media="screen and (max-device-width: 767px)" href="css/mobile.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>News</title>
+	<script type="text/javascript" src="project_04.js"></script>
+</head>
+<body lang="en">
+	<div id = "search_icon">
+		<a href="#" class="lighbox"><p id = "search_text" class="text">My News</p>
+			<img id = "icon" src="image/Search-icon-3.png">
+		</a>
+	</div>
+	<div class="backdrop"></div>
+	<div class="box">
+		<div class="close">
+			<p class="text">x</p>
+		</div>
+		<div id = "form_input">
+			<input type="text" id="search_input" value="Keywords">
+			<button id = "search"><p class="text">Search</p></button>
+			<div id = "container_filter">
+				<input type="text" id = "input_date_filter" value="2021-01-16">
+				<br>
+				<br>
+				<span id="note">Enter the day, month and year<br> you want to filter</span>
+			</div>
+		</div>
+	</div>
+	<div id="loading">
+  		<img id="loading-image" src="image/loading.gif" alt="Loading..." width="100%" />
+	</div>
+	<div id="new_list" class=".col-d-12 .col-t-12 .col-m-12"></div>
+	<script>
+  		$(window).on('load', function () {
+    		$('#loading').hide();
+  		}) 
+	</script>
+</body>
+</html>
